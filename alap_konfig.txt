@@ -1,0 +1,29 @@
+en
+conf t 
+hostname R4
+ip domain-name wmszki.hu
+ip ssh version 2
+crypto key generate rsa 
+1024
+
+ip ssh version 2
+username 1234 password 1234
+enable password 1234
+service password-encryption
+line console 0
+password 1234
+login
+exit
+line vty 0 15
+password 1234
+transport input ssh
+login local
+exit
+banner motd #Ez az R4-es router user: 1234 kod: 1234#
+
+ip ftp username 1234
+ip ftp password 1234
+
+end
+copy running-config startup-config 
+copy run ftp
