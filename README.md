@@ -2,7 +2,7 @@
 
 
 
-#R1
+## R1
 ```bash
 interface GigabitEthernet0/0
 ip address 192.168.1.254 255.255.255.0
@@ -21,7 +21,7 @@ network 10.1.1.0 0.0.0.3 area 0
 network 10.1.2.0 0.0.0.3 area 0
 
 ```
-#R3
+## R3
 ```bash
 !
 interface GigabitEthernet0/0
@@ -45,7 +45,7 @@ router ospf 1
 ```
 
 
-#R2
+## R2
 ```bash
 !
 interface GigabitEthernet0/0
