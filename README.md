@@ -68,3 +68,8 @@ router ospf 1
 !
 
 ```
+
+## Check kód
+```bash
+sh ip route o
+```
