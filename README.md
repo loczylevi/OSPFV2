@@ -72,6 +72,7 @@ router ospf 1
 ## Check kód
 ```bash
 sh ip route o
+sh ip os nei
 ```
 
 ## Clear command
