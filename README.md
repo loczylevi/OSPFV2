@@ -43,7 +43,7 @@ router ospf 1
  network 10.1.2.0 0.0.0.3 area 0
 !
 ```
-
+_passive interface felé nem hirdet OSPFV hello üzeneteket
 
 ## R2
 ```bash
@@ -80,3 +80,11 @@ sh ip os nei
 clear ip os pro
 ```
 
+
+## Satic route
+```bash
+ip route 0.0.0.0 0.0.0.0 201.1.1.1 1
+ip route 0.0.0.0 0.0.0.0 201.1.1.1 150
+```
+_A legvégén lévő egyes az  prioritás_
+_150 esetén lebegő utvonalról beszélünk_
