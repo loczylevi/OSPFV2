@@ -73,3 +73,9 @@ router ospf 1
 ```bash
 sh ip route o
 ```
+
+## Clear command
+```bash
+clear ip os pro
+```
+
