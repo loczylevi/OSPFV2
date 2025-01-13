@@ -62,6 +62,7 @@ interface Serial0/3/1
 router ospf 1
  router-id 3.3.3.3
  log-adjacency-changes
+default-information originate 
  network 10.1.1.0 0.0.0.3 area 0
  network 10.1.3.0 0.0.0.3 area 0
  network 192.168.2.0 0.0.0.255 area 0
