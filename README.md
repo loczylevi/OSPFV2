@@ -43,7 +43,7 @@ router ospf 1
  network 10.1.2.0 0.0.0.3 area 0
 !
 ```
-_passive interface felé nem hirdet OSPFV hello üzeneteket
+_passive interface felé nem hirdet OSPFV hello üzeneteket_
 
 ## R2
 ```bash
@@ -69,6 +69,7 @@ default-information originate
 !
 
 ```
+_default-information originate hirdeti hogy ennél a router egyik lábánál van az internet_
 
 ## Check kód
 ```bash
