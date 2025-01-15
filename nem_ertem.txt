@@ -1,0 +1,47 @@
+en
+conf t 
+hostname SW2
+ip domain-name wmszki.hu
+ip ssh version 2
+crypto key generate rsa 
+1024
+
+ip ssh version 2
+username 1234 password 1234
+enable password 1234
+service password-encryption
+line console 0
+password 1234
+login
+exit
+line vty 0 15
+password 1234
+transport input ssh
+login local
+exit
+banner motd #Ez az SW2 user: 1234 kod: 1234#
+
+ip ftp username 1234
+ip ftp password 1234
+
+end
+copy running-config startup-config 
+copy run ftp
+
+router ospf 1
+router-id 3.3.3.3
+passive-interface GigabitEthernet0/0
+network 172.17.1.0 0.0.0.31 area 0
+network 172.17.2.0 0.0.0.3 area 0
+network 10.1.1.0 0.0.0.3 area 0
+network 10.1.8.0 0.0.0.3  area 0
+
+0-1-30 -31
+
+32 -33 -62 - 63
+64 -65 -94 95
+96 -97 -126- 127
+128
+
+
+
